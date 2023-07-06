@@ -1,3 +1,4 @@
+
 # 1 - Reverter a ordem das palavras na frase, mantendo a ordem das palavras
 def reverso(frase):
     palavra = frase.split()
@@ -68,3 +69,6 @@ def anagrama_palindromo(frase):
 entrada_frase = "racecar"
 saida_resultado = anagrama_palindromo(entrada_frase)
 print("Anagrama: ", saida_resultado)
+
+
+input("Aperte ENTER para fechar")
