@@ -15,7 +15,7 @@ def remover(string):
 
 entrada_remover = "Hello, World!"
 saida_remover = remover(entrada_remover)
-print("Remover : ",saida_remover)
+print("Remover : ", saida_remover)
 
 # 3 - Encontrar a substring palindrômica mais longa na string
 def substring(string):
@@ -47,4 +47,24 @@ def primeira_maiuscula(input_string):
 
 entrada_maiuscula = "hello. how are you? I'm fine, thank you."
 saida_maiuscula = primeira_maiuscula(entrada_maiuscula)
-print("Maiúscula: ",saida_maiuscula)
+print("Maiúscula: ", saida_maiuscula)
+
+# 5 - Verificar se a string é um anagrama de um palíndromo: 
+from collections import Counter
+
+def anagrama_palindromo(frase):
+    frase_limpa = ''.join(letra.lower() for letra in frase if letra.isalpha())
+    contagem_letras = Counter(frase_limpa)
+    contagem_impares = 0
+
+    for contagem in contagem_letras.values():
+        if contagem % 2 != 0:
+            contagem_impares += 1
+            if contagem_impares > 1:
+                return False
+
+    return True
+
+entrada_frase = "racecar"
+saida_resultado = anagrama_palindromo(entrada_frase)
+print("Anagrama: ", saida_resultado)
