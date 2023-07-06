@@ -34,3 +34,5 @@ def substring(string):
 entrada_substring = "String Palindromo definição: Uma palavra é dita palíndroma quando possui o mesmo significado se lida da esquerda para a direita ou da direita para a esquerda"
 saida_substring = substring(entrada_substring)
 print("Substring: ", saida_substring)
+
+
