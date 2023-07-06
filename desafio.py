@@ -4,6 +4,15 @@ def reverso(frase):
     frase_reversa = ' '.join(reversed(palavra))
     return frase_reversa
 
-input_sentence = "Hello, World! OpenAl is amazing."
-output_sentence = reverso(input_sentence)
-print(output_sentence)
+entrada_reverter = "Hello, World! OpenAl is amazing."
+saida_reverter = reverso(entrada_reverter)
+print("Reverter: ", saida_reverter)
+
+# 2 - Remover todos os caracteres duplicados da string
+def remover(string):
+    unicos = list(dict.fromkeys(string))
+    return ''.join(unicos)
+
+entrada_remover = "Hello, World!"
+saida_remover = remover(entrada_remover)
+print("Remover : ",saida_remover)
