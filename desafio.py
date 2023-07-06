@@ -68,3 +68,5 @@ def anagrama_palindromo(frase):
 entrada_frase = "racecar"
 saida_resultado = anagrama_palindromo(entrada_frase)
 print("Anagrama: ", saida_resultado)
+
+input("Aperte ENTER para fechar")
