@@ -35,4 +35,16 @@ entrada_substring = "String Palindromo definição: Uma palavra é dita palíndr
 saida_substring = substring(entrada_substring)
 print("Substring: ", saida_substring)
 
+# 4 - Colocar em maíuscula a primeira letra de cada frase na string
+def primeira_maiuscula(input_string):
+    maiuscula = []
+    frase = input_string.split(". ")
+    for sentence in frase:
+        letra_maiuscula = sentence.capitalize()
+        maiuscula.append(letra_maiuscula)
+    output_string = ". ".join(maiuscula)
+    return output_string
 
+entrada_maiuscula = "hello. how are you? I'm fine, thank you."
+saida_maiuscula = primeira_maiuscula(entrada_maiuscula)
+print("Maiúscula: ",saida_maiuscula)
